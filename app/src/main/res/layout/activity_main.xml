@@ -4,39 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#404040"
+    android:background="@drawable/pattern1"
     android:orientation="vertical"
     tools:context="com.project.feedit.MainActivity">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pantfoods"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        />
 
     <EditText
         android:id="@+id/login_mobile"
         android:layout_width="match_parent"
         android:layout_height="102dp"
         android:layout_margin="20dp"
-        android:drawableRight="@drawable/mai"
+        android:drawableRight="@drawable/user_login"
         android:ems="10"
         android:hint="Enter Mobile No."
         android:inputType="phone"
-        android:textColor="#fff"
-        android:textColorHint="#fff" />
+        android:textColor="#000000"
+        android:textColorHint="#40E0D0" />
 
     <EditText
         android:id="@+id/login_password"
         android:layout_width="match_parent"
         android:layout_height="99dp"
         android:layout_margin="20dp"
-        android:drawableRight="@drawable/lock"
+        android:drawableRight="@drawable/pswd"
         android:ems="10"
         android:hint="Enter Password"
         android:inputType="textPassword"
-        android:textColor="#fff"
-        android:textColorHint="#fff" />
+        android:textColor="#000000"
+        android:textColorHint="#40E0D0" />
 
     <TextView
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="#87CEEB"
         android:gravity="center"
         android:text="Login"
         android:textColor="#fff"
@@ -49,14 +57,14 @@
         android:id="@+id/login_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="80dp"
+        android:background="#87CEEB"
         android:gravity="center"
+        android:padding="10dp"
         android:text="Sign Up"
         android:textColor="#fff"
-        android:textSize="22sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="80dp"
-        android:padding="10dp"/>
+        android:textSize="22sp" />
 
 </LinearLayout>

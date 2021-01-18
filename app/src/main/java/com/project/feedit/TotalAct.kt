@@ -31,7 +31,7 @@ class TotalAct : AppCompatActivity() {
         var rq: RequestQueue = Volley.newRequestQueue(this)
         var sr= StringRequest(Request.Method.GET,z, Response.Listener { response->
 
-            total_tv.text=response
+            total_tv.text="$"+response
             amount = response.toDouble()
 
         }, Response.ErrorListener { error->

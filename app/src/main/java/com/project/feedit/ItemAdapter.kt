@@ -31,7 +31,7 @@ class ItemAdapter (var context: Context, var list: ArrayList<item>): RecyclerVie
         fun bind(n:String,p:Double,u:String, itemi_d:Int)
         {
             itemView.item_name.text=n
-            itemView.item_price.text=p.toString()
+            itemView.item_price.text="₹"+ p.toString()
             var web:String="http://192.168.29.155/Salesweb/images/" + u
             web=web.replace(" ","%20")
             Picasso.get().load(web).into(itemView.item_photo)

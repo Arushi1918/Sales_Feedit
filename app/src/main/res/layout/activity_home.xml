@@ -5,13 +5,17 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#404040"
     android:orientation="vertical"
-    tools:context=".HomeAct">
+    tools:context=".HomeAct"
+    android:background="@drawable/patternsssss"
+    >
 
     <ListView
         android:id="@+id/home_cat"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:visibility="visible"
+        tools:visibility="visible" />
 
 </LinearLayout>

@@ -29,7 +29,7 @@ class OrderAct : AppCompatActivity() {
         var jar = JsonArrayRequest(Request.Method.GET, url, null,Response.Listener{response->
 
             for (x in 0..response.length() - 1)
-                l.add("Name: "+ response.getJSONObject(x).getString("NAME")+"\n"+"Price/unit: "
+                l.add("Name: "+ response.getJSONObject(x).getString("NAME")+"\n"+"Price/unit: ₹"
                         + response.getJSONObject(x).getString("PRICE") +"\n"+"Qty: "+response.getJSONObject(x).getString("QTY"))
 
             var adp = ArrayAdapter(this, android.R.layout.simple_list_item_1, l)
